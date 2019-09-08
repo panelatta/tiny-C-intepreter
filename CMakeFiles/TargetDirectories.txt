@@ -1,3 +1,0 @@
-D:/ahuonedrive/OneDrive - stu.ahu.edu.cn/workspace/tiny-C-intepreter/CMakeFiles/tc.dir
-D:/ahuonedrive/OneDrive - stu.ahu.edu.cn/workspace/tiny-C-intepreter/CMakeFiles/ALL_BUILD.dir
-D:/ahuonedrive/OneDrive - stu.ahu.edu.cn/workspace/tiny-C-intepreter/CMakeFiles/ZERO_CHECK.dir

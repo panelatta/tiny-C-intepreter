@@ -5,6 +5,10 @@ int eval() {
     int op, *tmp;
 
     while (true) {
+        // get next operation code
+        op = *pc++;
+        // printf("op = *pc++: %u\n", op);
+
         // virtual machine instructions
         if      (op == IMM)     {ax = *pc++;}       
         else if (op == LC)      {ax = *(char *)ax;}
@@ -28,10 +32,10 @@ int eval() {
         else if (op == AND)     {ax = (*sp++ &  ax);}
         else if (op == EQ)      {ax = (*sp++ == ax);}
         else if (op == NE)      {ax = (*sp++ != ax);}
-        else if (op == LT)      {ax = (*sp++ <  ax);}
-        else if (op == LE)      {ax = (*sp++ <= ax);}
-        else if (op == GT)      {ax = (*sp++ >  ax);}
-        else if (op == GE)      {ax = (*sp++ >= ax);}
+        else if (op == LT)      {ax = ((int)*sp++ <  ax);}
+        else if (op == LE)      {ax = ((int)*sp++ <= ax);}
+        else if (op == GT)      {ax = ((int)*sp++ >  ax);}
+        else if (op == GE)      {ax = ((int)*sp++ >= ax);}
         else if (op == SHL)     {ax = (*sp++ << ax);}
         else if (op == SHR)     {ax = (*sp++ >> ax);}
         else if (op == ADD)     {ax = (*sp++ +  ax);}

@@ -1,18 +1,18 @@
 #include "tinyc.h"
 
+int tst[20] = {0};
 void test(void) {
     int i = 0;
-    int text[20] = {0};
 
-    text[i++] = IMM;
-    text[i++] = 10;
-    text[i++] = PUSH;
-    text[i++] = IMM;
-    text[i++] = 20;
-    text[i++] = ADD;
-    text[i++] = PUSH;
-    text[i++] = EXIT;
+    tst[i++] = IMM;
+    tst[i++] = 10;
+    tst[i++] = PUSH;
+    tst[i++] = IMM;
+    tst[i++] = 20;
+    tst[i++] = ADD;
+    tst[i++] = PUSH;
+    tst[i++] = EXIT;
 
-    pc = text;
-
+    pc = tst;
+    // printf("pc = tst: %u\n", pc);
 }
