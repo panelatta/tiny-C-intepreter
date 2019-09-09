@@ -65,6 +65,53 @@ enum ins {
         EXIT
 };
 
+// tokens and classes (operators last and in precedence order)
+enum tokens {
+        Num = 128,
+        Fun,
+        Sys,
+        Glo,
+        Loc,
+        Id,
+
+        Char,
+        Else,
+        Enum,
+        If,
+        Int,
+        Return,
+        Sizeof,
+        While,
+
+        Assign,
+        Cond,
+        Lor,
+        Lan,
+        Or,
+        Xor,
+        And,
+        Eq,
+        Ne,
+        Lt,
+        Gt,
+        Le,
+        Ge,
+        Shl,
+        Shr,
+        Add,
+        Sub,
+        Mul,
+        Div,
+        Mod,
+        Inc,
+        Dec,
+        Brak
+};
+
+
+/******** Variables below are defined in tinyc.c ********/
+
+// list of messages
 extern char* msg[];
 
 extern int          token;                  // current token
